@@ -1,0 +1,136 @@
+[
+  {
+    "id": "TSHIRT-001",
+    "name": "Classic Cotton Tee",
+    "slug": "classic-cotton-tee",
+    "category": "tshirts",
+    "subcategory": "casual",
+    "price": 699,
+    "originalPrice": null,
+    "featured": true,
+    "description": "Our signature heavyweight cotton tee. Crafted from 100% ring-spun cotton for a soft hand feel that only gets better with every wash. Relaxed fit with a reinforced crew neck.",
+    "material": "100% Ring-Spun Cotton, 220 GSM",
+    "fit": "Regular Fit",
+    "images": ["1.svg", "2.svg"],
+    "colors": [
+      {
+        "name": "Jet Black",
+        "primaryColor": "black",
+        "secondaryColor": "black",
+        "hex": "#1a1a1a",
+        "sizes": { "XS": false, "S": true, "M": true, "L": true, "XL": true, "XXL": false }
+      },
+      {
+        "name": "Chalk White",
+        "primaryColor": "white",
+        "secondaryColor": "white",
+        "hex": "#f5f5f0",
+        "sizes": { "XS": true, "S": true, "M": true, "L": false, "XL": false, "XXL": false }
+      },
+      {
+        "name": "Stone Grey",
+        "primaryColor": "grey",
+        "secondaryColor": "grey",
+        "hex": "#8a8a8a",
+        "sizes": { "XS": false, "S": true, "M": true, "L": true, "XL": false, "XXL": false }
+      }
+    ]
+  },
+  {
+    "id": "TSHIRT-002",
+    "name": "Oversized Drop Shoulder Tee",
+    "slug": "oversized-drop-shoulder-tee",
+    "category": "tshirts",
+    "subcategory": "casual",
+    "price": 899,
+    "originalPrice": 1099,
+    "featured": true,
+    "description": "The effortlessly cool boxy tee you've been looking for. Features a dropped shoulder seam and extra room through the body for a relaxed, on-trend silhouette.",
+    "material": "100% Combed Cotton, 200 GSM",
+    "fit": "Oversized Fit",
+    "images": ["1.svg"],
+    "colors": [
+      {
+        "name": "Sand Dune",
+        "primaryColor": "beige",
+        "secondaryColor": "tan",
+        "hex": "#c9b99a",
+        "sizes": { "XS": true, "S": true, "M": true, "L": true, "XL": true, "XXL": false }
+      },
+      {
+        "name": "Moss Green",
+        "primaryColor": "green",
+        "secondaryColor": "olive",
+        "hex": "#4a5240",
+        "sizes": { "XS": false, "S": true, "M": true, "L": false, "XL": false, "XXL": false }
+      },
+      {
+        "name": "Dusty Rose",
+        "primaryColor": "pink",
+        "secondaryColor": "rose",
+        "hex": "#c08080",
+        "sizes": { "XS": true, "S": true, "M": false, "L": false, "XL": false, "XXL": false }
+      }
+    ]
+  },
+  {
+    "id": "TSHIRT-003",
+    "name": "Essential Pocket Tee",
+    "slug": "essential-pocket-tee",
+    "category": "tshirts",
+    "subcategory": "casual",
+    "price": 599,
+    "originalPrice": null,
+    "featured": false,
+    "description": "A wardrobe staple with a left-chest patch pocket. Made from our signature slub cotton fabric for subtle texture and a lived-in feel right from day one.",
+    "material": "100% Slub Cotton, 180 GSM",
+    "fit": "Slim Fit",
+    "images": ["1.svg"],
+    "colors": [
+      {
+        "name": "Navy Blue",
+        "primaryColor": "blue",
+        "secondaryColor": "navy",
+        "hex": "#1b2a4a",
+        "sizes": { "XS": false, "S": true, "M": true, "L": true, "XL": true, "XXL": true }
+      },
+      {
+        "name": "Brick Red",
+        "primaryColor": "red",
+        "secondaryColor": "brick",
+        "hex": "#8b3a3a",
+        "sizes": { "XS": true, "S": true, "M": true, "L": false, "XL": false, "XXL": false }
+      }
+    ]
+  },
+  {
+    "id": "TSHIRT-004",
+    "name": "Henley Neck Tee",
+    "slug": "henley-neck-tee",
+    "category": "tshirts",
+    "subcategory": "casual",
+    "price": 799,
+    "originalPrice": null,
+    "featured": true,
+    "description": "Classic Henley styling meets modern proportions. The two-button placket adds refined detail to an otherwise clean silhouette. Perfect for layering or wearing solo.",
+    "material": "95% Cotton 5% Elastane, 190 GSM",
+    "fit": "Regular Fit",
+    "images": ["1.svg"],
+    "colors": [
+      {
+        "name": "Vintage White",
+        "primaryColor": "white",
+        "secondaryColor": "cream",
+        "hex": "#ece8e0",
+        "sizes": { "XS": false, "S": true, "M": true, "L": true, "XL": true, "XXL": false }
+      },
+      {
+        "name": "Charcoal",
+        "primaryColor": "grey",
+        "secondaryColor": "charcoal",
+        "hex": "#3a3a3a",
+        "sizes": { "XS": false, "S": false, "M": true, "L": true, "XL": true, "XXL": true }
+      }
+    ]
+  }
+]

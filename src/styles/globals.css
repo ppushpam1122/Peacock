@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+  }
+  body {
+    @apply bg-hop-grey text-hop-black;
+  }
+  * { @apply scroll-smooth; }
+}
+
+@layer components {
+
+  /* ── Buttons ──────────────────────────────────────────── */
+  .btn-red {
+    @apply inline-flex items-center justify-center gap-2
+           px-6 py-3 bg-hop-red text-white
+           text-xs font-bold tracking-[0.08em] uppercase
+           transition-all duration-150
+           hover:bg-hop-red-dark active:scale-[0.97];
+  }
+  .btn-black {
+    @apply inline-flex items-center justify-center gap-2
+           px-6 py-3 bg-hop-black text-white
+           text-xs font-bold tracking-[0.08em] uppercase
+           transition-all duration-150
+           hover:bg-neutral-800 active:scale-[0.97];
+  }
+  .btn-outline-black {
+    @apply inline-flex items-center justify-center gap-2
+           px-6 py-3 border-2 border-hop-black text-hop-black
+           text-xs font-bold tracking-[0.08em] uppercase
+           transition-all duration-150
+           hover:bg-hop-black hover:text-white active:scale-[0.97];
+  }
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2.5
+           px-6 py-3.5 bg-[#25D366] text-white
+           text-xs font-bold tracking-[0.08em] uppercase
+           transition-all duration-150
+           hover:bg-[#1daf54] active:scale-[0.97] w-full;
+  }
+
+  /* ── Legacy aliases so old code still works ─────────────────── */
+  .btn-primary  { @apply btn-red; }
+  .btn-outline  { @apply btn-outline-black; }
+
+  /* ── Typography ──────────────────────────────────────── */
+  .section-label {
+    @apply text-[10px] font-bold tracking-[0.2em] uppercase text-hop-red;
+  }
+  .display-heading {
+    @apply font-display font-bold leading-tight;
+  }
+
+  /* ── Cards ────────────────────────────────────────────── */
+  .product-card {
+    @apply bg-white transition-shadow duration-300 hover:shadow-card-hover;
+  }
+
+  /* ── Filter checkbox ─────────────────────────────────── */
+  .filter-checkbox {
+    @apply w-4 h-4 accent-hop-red cursor-pointer;
+  }
+
+  /* ── Chips / pills ───────────────────────────────────── */
+  .chip {
+    @apply px-4 py-1.5 text-xs font-semibold border border-neutral-300
+           text-neutral-600 bg-white cursor-pointer transition-all
+           hover:border-hop-black hover:text-hop-black;
+  }
+  .chip-active {
+    @apply bg-hop-black border-hop-black;
+    color: #fff !important;
+  }
+
+  /* ── Select ──────────────────────────────────────────── */
+  .select-clean {
+    @apply text-xs border border-neutral-300 px-3 py-2 bg-white text-neutral-700
+           focus:outline-none focus:ring-1 focus:ring-hop-black cursor-pointer;
+  }
+
+  /* ── Tag badge (Fit | Category on card) ─────────────── */
+  .product-tag {
+    @apply text-[10px] font-semibold text-neutral-500 tracking-wide uppercase;
+  }
+}
+
+@layer utilities {
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar        { width: 5px; }
+::-webkit-scrollbar-track  { background: #f2f2f2; }
+::-webkit-scrollbar-thumb  { background: #cccccc; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #999; }
+
+/* Image zoom */
+.img-zoom { overflow: hidden; }
+.img-zoom img { transition: transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94); }
+.img-zoom:hover img { transform: scale(1.04); }
+
+/* Nav underline */
+.nav-link { position: relative; padding-bottom: 2px; }
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 0; height: 2px;
+  background: #C41E1E;
+  transition: width 0.25s ease;
+}
+.nav-link:hover::after, .nav-link.active::after { width: 100%; }

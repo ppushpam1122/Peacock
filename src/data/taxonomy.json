@@ -1,0 +1,55 @@
+{
+  "categories": [
+    {
+      "id": "clothing",
+      "label": "Clothing",
+      "slug": "clothing",
+      "children": [
+        {
+          "id": "casual",
+          "label": "Casual",
+          "slug": "casual",
+          "children": [
+            {
+              "id": "tshirts",
+              "label": "T-Shirts",
+              "slug": "tshirts",
+              "catalogFile": "tshirts"
+            }
+          ]
+        },
+        {
+          "id": "formal",
+          "label": "Formal",
+          "slug": "formal",
+          "children": [
+            {
+              "id": "shirts",
+              "label": "Shirts",
+              "slug": "shirts",
+              "catalogFile": "shirts"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nav": [
+    {
+      "label": "New Arrivals",
+      "href": "/clothing"
+    },
+    {
+      "label": "T-Shirts",
+      "href": "/clothing/tshirts"
+    },
+    {
+      "label": "Shirts",
+      "href": "/clothing/shirts"
+    },
+    {
+      "label": "Sale",
+      "href": "/clothing"
+    }
+  ]
+}

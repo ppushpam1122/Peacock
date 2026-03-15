@@ -1,0 +1,99 @@
+[
+  {
+    "id": "SHIRT-001",
+    "name": "Oxford Button-Down Shirt",
+    "slug": "oxford-button-down-shirt",
+    "category": "shirts",
+    "subcategory": "formal",
+    "price": 1499,
+    "originalPrice": null,
+    "featured": true,
+    "description": "The definitive Oxford shirt. Woven from premium 100% cotton Oxford cloth with a subtle texture that adds depth without formality. The button-down collar keeps things polished whether tucked or untucked.",
+    "material": "100% Oxford Weave Cotton, 130 GSM",
+    "fit": "Regular Fit",
+    "images": ["1.svg"],
+    "colors": [
+      {
+        "name": "Royal Blue",
+        "primaryColor": "blue",
+        "secondaryColor": "royal",
+        "hex": "#2c4a8a",
+        "sizes": { "XS": false, "S": true, "M": true, "L": true, "XL": true, "XXL": false }
+      },
+      {
+        "name": "Crisp White",
+        "primaryColor": "white",
+        "secondaryColor": "white",
+        "hex": "#f8f8f6",
+        "sizes": { "XS": false, "S": true, "M": true, "L": true, "XL": false, "XXL": false }
+      },
+      {
+        "name": "Pale Pink",
+        "primaryColor": "pink",
+        "secondaryColor": "pale",
+        "hex": "#e8c4c4",
+        "sizes": { "XS": true, "S": true, "M": false, "L": false, "XL": false, "XXL": false }
+      }
+    ]
+  },
+  {
+    "id": "SHIRT-002",
+    "name": "Linen Summer Shirt",
+    "slug": "linen-summer-shirt",
+    "category": "shirts",
+    "subcategory": "casual",
+    "price": 1299,
+    "originalPrice": 1599,
+    "featured": true,
+    "description": "Breathe easy in our best-selling linen shirt. Cut from garment-washed pure linen for an effortlessly relaxed look. The natural texture and slight wrinkle of linen only improves with wear.",
+    "material": "100% Pure Linen, Garment Washed",
+    "fit": "Relaxed Fit",
+    "images": ["1.svg"],
+    "colors": [
+      {
+        "name": "Natural Ecru",
+        "primaryColor": "beige",
+        "secondaryColor": "ecru",
+        "hex": "#d4c5a9",
+        "sizes": { "XS": false, "S": true, "M": true, "L": true, "XL": true, "XXL": true }
+      },
+      {
+        "name": "Ocean Slate",
+        "primaryColor": "blue",
+        "secondaryColor": "slate",
+        "hex": "#5b7a8a",
+        "sizes": { "XS": false, "S": true, "M": true, "L": false, "XL": false, "XXL": false }
+      }
+    ]
+  },
+  {
+    "id": "SHIRT-003",
+    "name": "Poplin Slim-Fit Shirt",
+    "slug": "poplin-slim-fit-shirt",
+    "category": "shirts",
+    "subcategory": "formal",
+    "price": 1199,
+    "originalPrice": null,
+    "featured": false,
+    "description": "Precision-tailored slim-fit shirt in ultra-smooth cotton poplin. Clean lines, minimal detailing, and a sharper silhouette make this the go-to for boardroom to bar.",
+    "material": "100% Cotton Poplin, 80s Count",
+    "fit": "Slim Fit",
+    "images": ["1.svg"],
+    "colors": [
+      {
+        "name": "Pure White",
+        "primaryColor": "white",
+        "secondaryColor": "white",
+        "hex": "#ffffff",
+        "sizes": { "XS": false, "S": true, "M": true, "L": true, "XL": true, "XXL": false }
+      },
+      {
+        "name": "Sky Blue",
+        "primaryColor": "blue",
+        "secondaryColor": "sky",
+        "hex": "#87b5d0",
+        "sizes": { "XS": false, "S": false, "M": true, "L": true, "XL": false, "XXL": false }
+      }
+    ]
+  }
+]

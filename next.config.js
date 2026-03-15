@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
-const BASE_PATH = isProd ? '/Peacock' : '';
+const BASE_PATH = isProd ? '/HOP' : '';
 
 const nextConfig = {
   output: 'export',

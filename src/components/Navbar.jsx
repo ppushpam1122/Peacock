@@ -65,13 +65,10 @@ export default function Navbar() {
     if (q.length < 2) return;
     setSearchOpen(false);
     setSearchQuery('');
-    // Use replace to force navigation even if URL is identical (same search term)
-    const url = `/search?q=${encodeURIComponent(q)}`;
-    if (router.asPath === url || router.asPath.startsWith('/search?q=' + encodeURIComponent(q))) {
-      router.replace(url);
-    } else {
-      router.push(url);
-    }
+    // Add _t timestamp so every submit is a unique URL — forces useEffect to re-run
+    // even when the search term is identical to the current URL
+    const url = `/search?q=${encodeURIComponent(q)}&_t=${Date.now()}`;
+    router.push(url);
   };
 
   return (

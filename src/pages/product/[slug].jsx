@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 import ProductGallery from '@/components/ProductGallery';
 import ProductCard from '@/components/ProductCard';
 import Breadcrumb from '@/components/Breadcrumb';
+import SizeGuideModal from '@/components/SizeGuideModal';
 import {
   formatPrice,
   buildBreadcrumb,
@@ -19,13 +20,6 @@ import { getAllSlugs, getProductBySlug, getAllProducts } from '@/lib/catalogLoad
 const WHATSAPP_NUMBER = '919999999999';
 const SIZE_ORDER = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
-const SIZE_GUIDE_DATA = [
-  { size: 'S',   chest: '40', length: '27' },
-  { size: 'M',   chest: '42', length: '28' },
-  { size: 'L',   chest: '44', length: '29' },
-  { size: 'XL',  chest: '46', length: '30' },
-  { size: 'XXL', chest: '48', length: '31' },
-];
 
 /* ── Fit selector: radio-pill style ─────────────────────── */
 function FitSelector({ fits, selectedFit, onChange }) {
@@ -151,51 +145,6 @@ function SizeRow({ color, selected, onChange, onSizeGuideClick }) {
   );
 }
 
-/* ── Inline Size Guide card (floating, not overlay) ─────── */
-function SizeGuideCard({ onClose }) {
-  return (
-    <div className="bg-white border border-neutral-200 shadow-modal w-72 animate-slide-up">
-      {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-neutral-100">
-        <h3 className="font-bold text-sm">Size Guide</h3>
-        <button onClick={onClose} className="text-neutral-400 hover:text-neutral-900 transition-colors">
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-      {/* Table */}
-      <div className="px-2 pt-2 pb-1">
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="text-left border-b border-neutral-100">
-              <th className="px-2 py-2 font-semibold text-neutral-700">Size</th>
-              <th className="px-2 py-2 font-semibold text-neutral-700">Chest</th>
-              <th className="px-2 py-2 font-semibold text-neutral-700">Length</th>
-            </tr>
-          </thead>
-          <tbody>
-            {SIZE_GUIDE_DATA.map((row, i) => (
-              <tr key={row.size} className={i % 2 === 0 ? 'bg-neutral-50' : ''}>
-                <td className="px-2 py-2 font-semibold">{row.size}</td>
-                <td className="px-2 py-2 text-neutral-600">{row.chest}</td>
-                <td className="px-2 py-2 text-neutral-600">{row.length}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <div className="px-4 py-3 border-t border-neutral-100">
-        <button
-          onClick={onClose}
-          className="w-full py-2 border border-neutral-200 text-sm font-semibold text-neutral-700 hover:bg-neutral-50 transition-colors"
-        >
-          Close
-        </button>
-      </div>
-    </div>
-  );
-}
 
 /* ── Main page ───────────────────────────────────────────── */
 export default function ProductPage({ product, related }) {
@@ -271,6 +220,7 @@ export default function ProductPage({ product, related }) {
       </Head>
 
       <Navbar />
+      {showSizeGuide && <SizeGuideModal onClose={() => setShowSizeGuide(false)} />}
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Breadcrumb */}
@@ -326,15 +276,11 @@ export default function ProductPage({ product, related }) {
               color={selectedColor}
               selected={selectedSize}
               onChange={setSelectedSize}
-              onSizeGuideClick={() => setShowSizeGuide(!showSizeGuide)}
+              onSizeGuideClick={() => setShowSizeGuide(true)}
             />
 
             {/* Inline Size Guide card */}
-            {showSizeGuide && (
-              <div className="mb-5">
-                <SizeGuideCard onClose={() => setShowSizeGuide(false)} />
-              </div>
-            )}
+            
 
             {/* Quantity */}
             <div className="flex items-center gap-0 mb-5">

@@ -130,3 +130,33 @@ svg {
   max-width: 100%;
   display: inline-block;
 }
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr); /* desktop: 3 cols next to sidebar */
+    gap: 16px;
+  }
+}
+
+/* ── Product grid ─────────────────────────────────────────
+   Mobile:  2 columns (always)
+   Tablet:  2 columns
+   Desktop: 3 columns (when next to sidebar, the 1fr column is ~950px wide)
+   Cards are always equal width — no layout jumping.
+──────────────────────────────────────────────────────── */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+@media (min-width: 768px) {
+  .product-grid {
+    gap: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}

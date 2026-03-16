@@ -12,7 +12,9 @@
     "material": "100% Oxford Weave Cotton, 130 GSM",
     "fit": "Regular Fit",
     "images": [
-      "1.svg"
+      "1.svg",
+      "2.svg",
+      "3.svg"
     ],
     "colors": [
       {
@@ -60,7 +62,9 @@
     ],
     "design": "Formal",
     "fullImages": [
-      "1_full.svg"
+      "1_full.svg",
+      "2_full.svg",
+      "3_full.svg"
     ]
   },
   {
@@ -76,7 +80,8 @@
     "material": "100% Pure Linen, Garment Washed",
     "fit": "Relaxed Fit",
     "images": [
-      "1.svg"
+      "1.svg",
+      "2.svg"
     ],
     "colors": [
       {
@@ -110,7 +115,8 @@
     ],
     "design": "Casual",
     "fullImages": [
-      "1_full.svg"
+      "1_full.svg",
+      "2_full.svg"
     ]
   },
   {
@@ -126,7 +132,8 @@
     "material": "100% Cotton Poplin, 80s Count",
     "fit": "Slim Fit",
     "images": [
-      "1.svg"
+      "1.svg",
+      "2.svg"
     ],
     "colors": [
       {
@@ -160,7 +167,8 @@
     ],
     "design": "Formal",
     "fullImages": [
-      "1_full.svg"
+      "1_full.svg",
+      "2_full.svg"
     ]
   }
 ]

@@ -3,16 +3,17 @@
   
   <g opacity="0.15" fill="#1a1a1a">
     <rect x="247" y="347" width="307" height="347" rx="3"/>
-    <path d="M 366.7,346.7 Q 400.0,406.7 433.3,346.7 L 456.0,304.0 Q 400.0,330.7 344.0,304.0 Z"/>
+    <path d="M 344.0,304.0 Q 400.0,330.7 456.0,304.0 L 456.0,353.3 Q 400.0,340.0 344.0,353.3 Z"/>
     <path d="M 246.7,346.7 L 166.7,420.0 L 197.3,460.0 L 246.7,389.3 Z"/>
     <path d="M 553.3,346.7 L 633.3,420.0 L 602.7,460.0 L 553.3,389.3 Z"/>
+    <line x1="400" y1="353" x2="400" y2="693" stroke="#1a1a1a" stroke-width="1.5" opacity="0.25"/>
   </g>
   <!-- Watermark letter -->
   <text x="400" y="500" font-family="Arial Black,Arial,sans-serif" font-size="304"
         font-weight="900" fill="#1a1a1a" opacity="0.04" text-anchor="middle" dominant-baseline="middle">H</text>
   <!-- View label top-right -->
   <text x="788" y="24" font-family="monospace" font-size="21"
-        fill="#1a1a1a" opacity="0.4" text-anchor="end">FRONT VIEW</text>
+        fill="#1a1a1a" opacity="0.4" text-anchor="end">BACK VIEW</text>
   <!-- Product name -->
   <text x="400" y="870" font-family="Arial,sans-serif" font-size="36"
         font-weight="600" fill="#1a1a1a" opacity="0.75" text-anchor="middle">Poplin Slim-Fit</text>

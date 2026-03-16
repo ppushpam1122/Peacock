@@ -13,7 +13,8 @@
     "fit": "Regular Fit",
     "images": [
       "1.svg",
-      "2.svg"
+      "2.svg",
+      "3.svg"
     ],
     "colors": [
       {
@@ -62,7 +63,8 @@
     "design": "Plain",
     "fullImages": [
       "1_full.svg",
-      "2_full.svg"
+      "2_full.svg",
+      "3_full.svg"
     ]
   },
   {
@@ -78,7 +80,9 @@
     "material": "100% Combed Cotton, 200 GSM",
     "fit": "Oversized Fit",
     "images": [
-      "1.svg"
+      "1.svg",
+      "2.svg",
+      "3.svg"
     ],
     "colors": [
       {
@@ -126,7 +130,9 @@
     ],
     "design": "Plain",
     "fullImages": [
-      "1_full.svg"
+      "1_full.svg",
+      "2_full.svg",
+      "3_full.svg"
     ]
   },
   {
@@ -142,7 +148,8 @@
     "material": "100% Slub Cotton, 180 GSM",
     "fit": "Slim Fit",
     "images": [
-      "1.svg"
+      "1.svg",
+      "2.svg"
     ],
     "colors": [
       {
@@ -176,7 +183,8 @@
     ],
     "design": "Plain",
     "fullImages": [
-      "1_full.svg"
+      "1_full.svg",
+      "2_full.svg"
     ]
   },
   {
@@ -192,7 +200,8 @@
     "material": "95% Cotton 5% Elastane, 190 GSM",
     "fit": "Regular Fit",
     "images": [
-      "1.svg"
+      "1.svg",
+      "2.svg"
     ],
     "colors": [
       {
@@ -226,7 +235,8 @@
     ],
     "design": "Plain",
     "fullImages": [
-      "1_full.svg"
+      "1_full.svg",
+      "2_full.svg"
     ]
   }
 ]

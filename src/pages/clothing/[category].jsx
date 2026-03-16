@@ -174,7 +174,7 @@ export default function CategoryPage({ category, products, categoryNode, isInter
           {/* Grid — takes all 1fr space, min-height prevents collapse */}
           <div className="min-h-[400px]">
             {filtered.length > 0 ? (
-              <div className="grid gap-4" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", minWidth: 0 }}>
+              <div className="product-grid">
                 {filtered.map((p, i) => (
                   <ProductCard key={p.id} product={p} priority={i < 6} />
                 ))}

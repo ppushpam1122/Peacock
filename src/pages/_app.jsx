@@ -2,6 +2,7 @@ import '@/styles/globals.css';
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import Footer from '@/components/Footer';
+import SizeGuideModal from '@/components/SizeGuideModal';
 import InfoModal from '@/components/InfoModal';
 
 export default function App({ Component, pageProps }) {
@@ -19,7 +20,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -31,9 +32,11 @@ export default function App({ Component, pageProps }) {
       </div>
 
       {/* Global info modals */}
-      {activePage && (
+      {activePage === 'Size Guide' ? (
+        <SizeGuideModal onClose={() => setActivePage(null)} />
+      ) : activePage ? (
         <InfoModal page={activePage} onClose={() => setActivePage(null)} />
-      )}
+      ) : null}
 
       {/* Global back-to-top button — appears on every page after scrolling 400px */}
       <button

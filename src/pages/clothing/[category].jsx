@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import ProductCard from '@/components/ProductCard';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -66,6 +66,15 @@ export default function CategoryPage({ category, products, categoryNode, isInter
     const s = { fits: setActiveFits, designs: setActiveDesigns, sizes: setActiveSizes };
     s[key]?.(arr.includes(val) ? arr.filter((x) => x !== val) : [...arr, val]);
   };
+
+  // Reset all filters whenever the category changes (e.g. T-Shirts → Shirts via navbar)
+  useEffect(() => {
+    setActiveFits([]);
+    setActiveDesigns([]);
+    setActiveSizes([]);
+    setSort('default');
+    setMobileOpen(false);
+  }, [category]);
 
   const clearAll    = () => { setActiveFits([]); setActiveDesigns([]); setActiveSizes([]); };
   const activeCount = activeFits.length + activeDesigns.length + activeSizes.length;
@@ -153,10 +162,9 @@ export default function CategoryPage({ category, products, categoryNode, isInter
         {/* Body */}
         {/* Inline style grid — 100% reliable, never purged by Tailwind */}
         <div
-          className="block lg:grid items-start"
+          className="block lg:grid"
           style={{
-            '--grid-template': '224px 1fr',
-            gridTemplateColumns: 'var(--grid-template)',
+            gridTemplateColumns: '224px 1fr',
             gap: '24px',
             alignItems: 'start',
           }}

@@ -113,10 +113,9 @@ export default function AllClothingPage({ products, fits, designs, categories })
              purged. Inline style is never purged. Sidebar is always 224px,
              content always fills the rest — layout NEVER jumps. */}
         <div
-          className="block lg:grid items-start"
+          className="block lg:grid"
           style={{
-            '--grid-template': '224px 1fr',
-            gridTemplateColumns: 'var(--grid-template)',
+            gridTemplateColumns: '224px 1fr',
             gap: '24px',
             alignItems: 'start',
           }}
